@@ -28,6 +28,32 @@
         <div class="BlueBar">
             <a class="text-decoration-none Head" href="Library.html">Strapstory</a>
         </div>
+        
+        <div style="min-height: 135vh; background-color: lightslategray;">
+            <form class="signup-form-1" action="" onsubmit="return !!(validateEmail() & validatePhone() & validatePassword() & validateCheckPassword());">
+                <h1>SIGN UP</h1>
+                <input type="text" placeholder="Full Name" class="txtb" required="">
+                <input type="email" placeholder="Email Address" id="email" class="txtb" required="">
+                <p for="email-check" id="email-error"></p>
+                <input type="number" placeholder="Phone Number" id="phone-number" maxlength="10" class="txtb" required="">
+                <p for="phonenumber-check" id="phone-error"></p>
+                <input type="password" placeholder="Password" id="password" class="txtb" required="">
+                <p for="password-check" id="password-error"></p>
+                <p for="password-strenght" id="password-strength"></p>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" class="txtb" required="">
+                <p for="confirmpassword-check" id="confirm-error"></p>
+                <input type="submit" value="Create Account" id="submit" class="signup-btn text-decoration-none">
+                <a class="text-decoration-none" href="SignIn.html">Already Have One ?</a>
+            </form>
+        </div>
     </div>
-</body>
+    <!-- footer  -->
+    <div>
+        <footer class="mastfoot mt-auto">
+          <p style="text-align: center;">For educational Purposes @<a href="https://github.com/Justinjdaniel/LibraryManagement">Library Management</a>, by <a href="https://github.com/Justinjdaniel/">Justin J</a>. <br>All Rights Reserved© 2020</p>
+        </footer>
+    </div>
+
+    <script src="./JS/SignUp.js"></script>
+    </body>
 </html>
