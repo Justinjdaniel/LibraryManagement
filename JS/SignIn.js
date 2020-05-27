@@ -3,22 +3,19 @@ let usererror = document.getElementById("user-error");
 let password = document.getElementById("password");
 let passworderror = document.getElementById("password-error");
 
-function validateEmail(){
+function validateUsername(){
 
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var phonenumber = /^\(?([1-9]{1}[0-9]{2})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
-    if(mailformat.test(username.value)){
+    if(mailformat.test(username.value))
+    {
         username.style.border = "2px solid green";
         return true;
     }
-    else if(phonenumber.test(number.value)){
-        username.style.border = "2px solid green";
-        return true;
-    }
-    else{
+    else
+    {
         username.style.border ="2px solid red";
-        usererror.innerHTML ="Username is Invalid";
+        usererror.innerHTML ="Username is Invalid ☹";
         usererror.style.color ="red";
         return false;
     } 
@@ -26,17 +23,19 @@ function validateEmail(){
 
 function validatePassword(){
 
-    var passwordexp=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+    var passwordexp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 
-    if(passwordexp.test(password.value)){
+    if(passwordexp.test(password.value)) 
+    { 
         password.style.border ="2px solid green";
-        passworderror.innerHTML = "Password is Correct ☺";
+        passworderror.innerHTML = "Password is Right ☺";
         passworderror.style.color = "green";
         return true;
     }
-    else{
+    else
+    {  
         password.style.border ="2px solid red";
-        passworderror.innerHTML = "Password is Incorrect ☹";
+        passworderror.innerHTML = "Password is Wrong ☹";
         passworderror.style.color = "red";
         return false;
     }

@@ -39,10 +39,11 @@ font-family: 'Squada One', cursive;
     width: 350px;
     padding: 20px;
     position: absolute;
-    top: 500px;
+    top: 510px;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
-    background: #00004d94;
+    background: #2d2d77;
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .5) ;
     overflow: hidden;
@@ -121,6 +122,6 @@ font-family: 'Squada One', cursive;
 }
 footer{
     position: absolute;
-    bottom: -200px;
+    bottom: -250px;
     margin-left: 35%;
 }

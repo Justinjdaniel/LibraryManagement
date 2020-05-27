@@ -24,7 +24,7 @@
 }
 
 .signup-form-1{
-    margin-top: 290px;
+    margin-top: 340px;
     margin-bottom: 50px;
     width: 400px;
     padding: 20px;
@@ -107,6 +107,6 @@
 }
 footer{
     position: absolute;
-    bottom: -400px;
+    bottom: -530px;
     margin-left: 35%;
 }
